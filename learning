@@ -10,9 +10,10 @@ git --global user.email "email@example.com"
 1. git status
 2. git diff
 
-
-
 ---------------
+1. git reset --head commit_id
+2. git log
+3. git reflog
 ---------------
 ---------------
 ---------------
