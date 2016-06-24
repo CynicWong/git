@@ -7,6 +7,8 @@ git --global user.email "email@example.com"
 2. git commit -m "****"
 
 ---------------
+1. git status
+2. git diff
 
 
 
