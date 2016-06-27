@@ -11,10 +11,20 @@ git --global user.email "email@example.com"
 2. git diff
 
 ---------------
-1. git reset --head commit_id
-2. git log
-3. git reflog
+version control
+    git reset HEAD^  #last version
+    git reset HEAD^^
+    git reset HEAD~100
+1. git reset --hard commit_id 
+2. git log --pretty=oneline
+3. git reflog (history)
+
 ---------------
+1. working directory
+2. repository
+    .git
+        stage (index) <-- git add
+        master (pointer: HEAD) <-- git commit
 ---------------
 ---------------
 ---------------
