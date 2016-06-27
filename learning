@@ -20,15 +20,25 @@ version control
 3. git reflog (history)
 
 ---------------
-1. working directory
-2. repository
+1. working directory #visable
+2. repository        #hidden
     .git
         stage (index) <-- git add
         master (pointer: HEAD) <-- git commit
+---------
+_________
+|       |
+|       |
+|       |
+|       |
+|       |
+_________---------
 ---------------
 ---------------
-revoke change
+
 git checkout -- file #discard changes in working directory
+git reset HEAD file #unstage
+
 ---------------
 ---------------
 ---------------
