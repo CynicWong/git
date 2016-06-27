@@ -25,14 +25,6 @@ version control
     .git
         stage (index) <-- git add
         master (pointer: HEAD) <-- git commit
----------
-_________
-|       |
-|       |
-|       |
-|       |
-|       |
-_________---------
 ---------------
 ---------------
 
@@ -40,6 +32,8 @@ git checkout -- file #discard changes in working directory
 git reset HEAD file #unstage
 
 ---------------
+git rm file #after file deleting in working directory
+
 ---------------
 ---------------
 ---------------
