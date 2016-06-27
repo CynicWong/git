@@ -27,6 +27,8 @@ version control
         master (pointer: HEAD) <-- git commit
 ---------------
 ---------------
+revoke change
+git checkout -- file #discard changes in working directory
 ---------------
 ---------------
 ---------------
