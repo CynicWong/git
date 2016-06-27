@@ -35,7 +35,27 @@ git reset HEAD file #unstage
 git rm file #after file deleting in working directory
 
 ---------------
+github
+
+ssh-keygen -t rsa -C "youremail@example.com"
+
+1. cd /home/nick/.ssh
+2. github--settings--SSH and GPG keys
+3. paste id_rsa.pub
+
+===============
+$ unset SSH_ASKPASS
+
+To prevent it in future, you can add the above line in your .bashrc or .bash_profile.
+echo 'unset SSH_ASKPASS' >>~/.bashrc && source ~/.bashrc
+===============
+
 ---------------
+git remote add origin https://github.com/CynicWong/git.git
+    #git remote add origin git@github.com:nicwon/git.git
+git push -u origin master  #firt time, use -u
+git push origin master
+
 ---------------
 ---------------
 ---------------
