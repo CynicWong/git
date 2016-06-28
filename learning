@@ -63,11 +63,14 @@ git checkout <name>       #switch to branch
 git checkout -b <name>    #create new branch and switch to it
 git merger <name>         #merger branch to master
 git branch -d <name>      #delete branch
+git branch -D <name>      #delete unmerged branch
 
 ---------------
 git log --graph --pretty=oneline --abbrev-commit
 
 ---------------
+git merge --no-ff -m "*****" <name>  #disable fast forward
+
 ---------------
 ---------------
 ---------------
