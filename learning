@@ -57,6 +57,13 @@ git push -u origin master  #firt time, use -u
 git push origin master
 
 ---------------
+git branch
+git branch <name>
+git checkout <name>
+git checkout -b <name>
+git merger <name>
+git branch -d <name>
+
 ---------------
 ---------------
 ---------------
