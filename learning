@@ -65,8 +65,8 @@ git merger <name>         #merger branch to master
 git branch -d <name>      #delete branch
 
 ---------------
-confuse
-conflict
+git log --graph --pretty=oneline --abbrev-commit
+
 ---------------
 ---------------
 ---------------
