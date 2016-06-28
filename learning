@@ -72,7 +72,46 @@ git log --graph --pretty=oneline --abbrev-commit
 git merge --no-ff -m "*****" <name>  #disable fast forward
 
 ---------------
+git stash    #save working directory and index state 
+git stash list
+git stash apply
+git stash drop
+git stash pop
+
 ---------------
+git remote
+git push origin branch-name
+git checkout -b branch-name origin/branch-name
+git branch --set-upstream branch-name origin/branch-name
+git pull
+
+---------------
+git tag <tag name>    #make a tag
+git tag               #check all the tags
+git tag <tag name> commit_id  #tag history commit
+git show <tag name>   
+git tag -a <tag name> -m "***" commit_id
+git tag -s <tag name> -m "***" commit_id
+
+---------------
+git tag -d <tag name>     #delete tag
+git push origin <tag name>  #push specified tag
+git push origin --tags      #push all tags
+git push origin :refs/tags/<tag name>  #delete remote tag
+
+---------------
+create file .gitigore on working directory, 
+
+git add -f <file name>  #force to add file to repository
+git check-ignore -v <file name>   #check if file is ignore
+
+---------------
+git config --global alias.co checkout  #set alias for checkout
+or edit ~/.gitconfig
+    [alias]
+    co = checkout
+    cm = commit
+    br = branch
 ---------------
 ---------------
 ---------------
