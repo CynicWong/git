@@ -52,6 +52,7 @@ echo 'unset SSH_ASKPASS' >>~/.bashrc && source ~/.bashrc
 
 ---------------
 git remote add origin https://github.com/CynicWong/git.git
+    #git remote rm origin
     #git remote add origin git@github.com:nicwon/git.git
 git push -u origin master  #firt time, use -u
 git push origin master
@@ -125,4 +126,12 @@ git add .
 git mv [file-original] [file-renamed]
 
 ---------------
+vim ~/.git-credentials
+https://{username}:{password}@github.com
+git config --global credential.helper store
+cat ~/.gitconfig
+    [credential]
+
+        helper = store
+
 ---------------
