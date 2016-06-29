@@ -112,8 +112,17 @@ or edit ~/.gitconfig
     co = checkout
     cm = commit
     br = branch
+    st = status
+
 ---------------
 ---------------
+git config --list
+git config -e [--global]
 ---------------
+git add [file1] [file2]
+git add [dir]
+git add .
+git mv [file-original] [file-renamed]
+
 ---------------
 ---------------
