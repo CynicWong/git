@@ -1,1 +1,26 @@
-1. 
+1. unzip
+
+2. mv
+#rename with lowercase
+
+for i in `ls *.csv`;
+do
+    mv  -f $i `echo $i | awk -F . '{print tolower($1)"."$2}'`
+done
+
+#remove timestamp --2015
+
+for i in `ls *.csv`;
+do
+    mv -f $i `echo $i | sed 's/\(tbl.*[a-z]\)\(_2015.*\.csv\)/\1\.csv/'`
+done
+
+for i in `ls *.csv`;
+do
+    mv -f $i `echo $i | sed 's/\(tbl.*[a-z]\)\(_all.*\.csv\)/\1\.csv/'`
+done
+
+
+3. select inload_dbo('**','8014')
+
+
