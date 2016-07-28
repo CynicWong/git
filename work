@@ -23,4 +23,14 @@ done
 
 3. select inload_dbo('**','8014')
 
+----------------------
+##for only one file has column name
+cat `ls -rt` >> /data/etw/tbl_viphf.csv
+
+##for all files has column name
+head -1 * | sort -n | uniq | tail -1 > __.csv
+
+for i in `ls /file/path/*.csv`; do
+    cat $i | sed '1d' >> __.csv
+done
 
